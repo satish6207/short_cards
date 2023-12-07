@@ -5,7 +5,8 @@ li{
     list-style: none;
 }
 .card {
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -16,7 +17,7 @@ li{
     height: 150px;
   }
   .card-body {
-    padding: 16px;
+    padding: 10px;
   }
   .card-text {
     font-size: 14px;
@@ -29,10 +30,13 @@ li{
     color: #6d6c6c;
     font-size: .8rem;
   }
+  #carouselExample {
+    margin-top: 120px;
+  }
   .carousel {
     position: relative;
-    width: 90%;
-    max-width: auto;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
   }
@@ -70,4 +74,15 @@ li{
 }
 .carousel-control-next {
   right: 10px;
+}
+
+@media (max-width: 768px) {
+  
+  .carousel {
+      max-width: 800px; 
+  }
+
+  .card {
+      width: 18rem;
+  }
 }
